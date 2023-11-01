@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- HEAD-LINKS --><head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="./img/Vector.svg" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#111111" />
+    <title>TatForYou</title>
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      defer="defer"
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <script src="../js/components/swiper.js"></script>
+    <!-- SWIPER -->
+    <!-- FONTS -->
+    <link
+      rel="preload"
+      href="../resources/fonts/Cormorant-Regular.woff"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../resources/fonts/Inter-Bold.woff"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../resources/fonts/Lato-Bold.woff"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../resources/fonts/Lato-Regular.woff"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../resources/fonts/Montserrat-Black.woff"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../resources/fonts/Montserrat-Bold.woff"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../resources/fonts/Montserrat-Medium.woff"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../resources/fonts/Montserrat-Regular.woff"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../resources/fonts/Montserrat-SemiBold.woff"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <!-- FONTS -->
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer="defer" src="js/main.js"></script>
+  </head>
+  <body>
+    <main class="site-container">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header__container">
+          <div class="header__content">
+            <div class="header__menu">
+              <div class="menu__start">
+                <a href="#" class="header__logo"
+                  ><img src="./img/header.png" class="logo" alt="" />
+                  <img src="./img/logoPhone.jpg" class="logo__phone" alt="" />
+                  <img src="./img/Vector.svg" class="phone__vector" alt=""
+                /></a>
+                <nav class="nav">
+                  <ul class="navigations">
+                    <li class="header__list">
+                      <a href="#" class="header__link">О нас</a>
+                    </li>
+                    <li class="header__list">
+                      <a href="#" class="header__link">Акции</a>
+                    </li>
+                    <li class="header__list">
+                      <a href="#" class="header__link">Статьи</a>
+                    </li>
+                    <li class="header__list">
+                      <a href="#" class="header__link">Новости</a>
+                    </li>
+                    <li class="header__list">
+                      <a href="#" class="header__link">контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="menu__end">
+                <div class="menu__delivery">
+                  <img class="uk" src="./img/uk.png" alt="" />
+                  <p class="delivery__text">Доставка</p>
+                </div>
+                <div class="menu__location">
+                  <div class="location__loc">
+                    <img src="./img/location.svg" alt="" />
+                    <div class="loc__text">Шоурум на Коломенской</div>
+                  </div>
+                  <div class="location__tel">
+                    <img src="./img/tel.svg" alt="" />
+                    <div class="tel__text">Днепр, коломенская 2</div>
+                  </div>
+                </div>
+                <div class="menu__number">
+                  <div class="number__num">+38 (093) 000 0000</div>
+                  <div class="number__text">Ежедневно с 10:00 до 21:00</div>
+                </div>
+              </div>
+              <a href="#" class="menu__btn">Обратный звонок</a>
+              <div class="call__btn">
+                <a href="#" class="call"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                  >
+                    <path
+                      d="M28.9126 22.0183C27.7561 20.8765 26.3123 20.8765 25.1632 22.0183C24.2866 22.8875 23.41 23.7567 22.5482 24.6406C22.3124 24.8837 22.1135 24.9353 21.8263 24.7732C21.2591 24.4638 20.655 24.2134 20.1099 23.8745C17.5685 22.2761 15.4397 20.221 13.5539 17.908C12.6184 16.7589 11.786 15.5288 11.2041 14.1439C11.0862 13.864 11.1083 13.6799 11.3367 13.4515C12.2132 12.6044 13.0677 11.7352 13.9296 10.866C15.1303 9.65798 15.1303 8.24369 13.9222 7.02828C13.2372 6.33587 12.5521 5.65819 11.867 4.96578C11.1599 4.25863 10.4601 3.54412 9.74553 2.84434C8.58902 1.71733 7.14523 1.71733 5.99609 2.85171C5.11213 3.72091 4.26501 4.6122 3.36632 5.46667C2.53393 6.25484 2.11405 7.2198 2.02565 8.34682C1.88569 10.181 2.33504 11.912 2.96854 13.5988C4.26501 17.0904 6.23918 20.1915 8.63322 23.0348C11.867 26.8799 15.727 29.9221 20.2425 32.1172C22.2756 33.1043 24.3824 33.863 26.6733 33.9882C28.2497 34.0766 29.6198 33.6788 30.7174 32.4487C31.4687 31.6089 32.3159 30.8429 33.1114 30.04C34.29 28.8467 34.2974 27.4029 33.1262 26.2243C31.7266 24.8174 30.3196 23.4178 28.9126 22.0183Z"
+                      stroke="#D4BDED"
+                      stroke-width="3"
+                    /></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <!-- SECTION-SEARCH -->
+        <section class="search">
+          <div class="search__container">
+            <div class="search__content">
+              <div class="search__wrapper">
+                <div class="search__catalog">
+                  <img src="./img/catalog.svg" alt="" />
+                  <p class="catalog__text">Каталог</p>
+                </div>
+                <div class="search__input"><input type="text" /></div>
+                <div class="search__basket">
+                  <div class="active__catalog">
+                    <img src="./img/catalog.svg" alt="" />
+                    <p class="catalog__text">Каталог</p>
+                  </div>
+                  <img src="./img/heart.svg" class="heart" alt="" />
+                  <div class="basket">
+                    <img src="./img/bag-happy.svg" class="basket__bas" alt="" />
+                    <p class="basket__num">0</p>
+                  </div>
+                  <div class="search__signUp">
+                    <p class="signUp__text">Войти</p>
+                    <img src="./img/profilecircle.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION-HERO -->
+        <section class="hero">
+          <div class="hero__container">
+            <div class="hero__content">
+              <div class="hero__start">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="hero__item">
+                        <img src="./img/catalog/Rectangle2.png" alt="" />
+                        <div class="item__text">
+                          <div class="hero__title price">
+                            ЗАБЕРИ ПО ЛУЧШЕЙ ЦЕНЕ
+                          </div>
+                          <div class="hero__subtitle">
+                            Более 130 видов
+                            <span>помпонов из меха</span> ручного производства
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="hero__item">
+                        <img src="./img/catalog/news.png" alt="" />
+                        <div class="item__text">
+                          <div class="hero__title news">НОВИНКА</div>
+                          <div class="hero__subtitle">
+                            <span>Вязаные изделия:</span> шапки, свитера,
+                            варежки, шарфы
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="hero__item">
+                        <img src="./img/catalog/Rectangle2.png" alt="" />
+                        <div class="item__text">
+                          <div class="hero__title price">
+                            ЗАБЕРИ ПО ЛУЧШЕЙ ЦЕНЕ
+                          </div>
+                          <div class="hero__subtitle">
+                            Более 130 видов
+                            <span>помпонов из меха</span> ручного производства
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="hero__item">
+                        <img src="./img/catalog/news.png" alt="" />
+                        <div class="item__text">
+                          <div class="hero__title news">НОВИНКА</div>
+                          <div class="hero__subtitle">
+                            <span>Вязаные изделия:</span> шапки, свитера,
+                            варежки, шарфы
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <div class="hero__center">
+                <div class="hero__list">
+                  <ul class="list__hero">
+                    <li class="list__name">
+                      <a href="#" class="name__link">Меховые опушки</a>
+                    </li>
+                    <li class="list__name">
+                      <a href="#" class="name__link">Мех отрезы</a>
+                    </li>
+                    <li class="list__name">
+                      <a href="#" class="name__link">Искусственный мех</a>
+                    </li>
+                    <li class="list__name">
+                      <a href="#" class="name__link">Помпоны</a>
+                    </li>
+                    <li class="list__name">
+                      <a href="#" class="name__link">Меховая обувь</a>
+                    </li>
+                    <li class="list__name">
+                      <a href="#" class="name__link">Вязанные изделия</a>
+                    </li>
+                    <li class="list__name">
+                      <a href="#" class="name__link active">Все разделы…</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION-NEWS -->
+        <section class="news">
+          <div class="news__container">
+            <div class="news__content">
+              <div class="news__end">
+                <div class="end__items">
+                  <div class="end__item">
+                    <div class="item__text">
+                      Приятные <span>новинки,</span> которые Вы ждали!
+                    </div>
+                    <a href="#" class="item__btn"
+                      >37 вариантов <img src="./img/catalog/right.svg" alt=""
+                    /></a>
+                  </div>
+                  <div class="end__item">
+                    <img
+                      class="item__photo"
+                      src="./img/catalog/01.png"
+                      alt=""
+                    />
+                    <div class="item__text">
+                      Искусственный мех Канадской норки Букет
+                    </div>
+                  </div>
+                  <div class="end__item">
+                    <img
+                      class="item__photo"
+                      src="./img/catalog/02.png"
+                      alt=""
+                    />
+                    <div class="item__text">Искусственный мех Лама Мятный</div>
+                  </div>
+                  <div class="end__item">
+                    <img
+                      class="item__photo"
+                      src="./img/catalog/03.png"
+                      alt=""
+                    />
+                    <div class="item__text">Искусственный мех Енот Латте</div>
+                  </div>
+                  <div class="end__item">
+                    <img
+                      class="item__photo"
+                      src="./img/catalog/04.png"
+                      alt=""
+                    />
+                    <div class="item__text">Искусственный мех Енот Латте</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PRICE-NEWS -->
+        <section class="price">
+          <div class="price__container">
+            <div class="price__content">
+              <div class="price__start">
+                <div class="start__item">
+                  <img
+                    class="start__mobile"
+                    src="./img/news/mobile.png"
+                    alt=""
+                  />
+                  <img
+                    class="photo__start"
+                    src="./img/news/start01.png"
+                    alt=""
+                  />
+                  <div class="start__text">
+                    <div class="item__sale">-70%</div>
+                    <div class="item__title">
+                      Большая рапродажа <span>помпонов</span>
+                    </div>
+                    <div class="item__title">
+                      Успей купить <span>выгодно</span>
+                    </div>
+                  </div>
+                  <div class="item__time">
+                    <div class="time__text">Осталось</div>
+                    <div class="time__muted">4 дн, 12 ч</div>
+                  </div>
+                  <div class="text__title">
+                    <div class="start__title">Большая рапродажа</div>
+                  </div>
+                </div>
+                <div class="start__item">
+                  <img
+                    class="photo__start"
+                    src="./img/news/start02.png"
+                    alt=""
+                  />
+                  <div class="start__text">
+                    <div class="item__sale">ЗАБЕРИ ПО ЛУЧШЕЙ ЦЕНЕ</div>
+                  </div>
+                  <div class="text__title">
+                    <div class="start__title">Остатки искусственного меха</div>
+                    <a href="#" class="title__btn">3 варианта</a>
+                  </div>
+                </div>
+              </div>
+              <div class="price__center"></div>
+              <div class="price__end"></div>
+            </div>
+          </div>
+        </section>
+        <!-- PRICE-SUBSCRIVE -->
+        <section class="subscribe">
+          <div class="subscribe__container">
+            <div class="subscribe__content">
+              <div class="subscribe__last">
+                <div class="last__item">
+                  <div class="item__title">Последние новости</div>
+                  <a href="#" class="item__subtitle"
+                    >Подпишись на наши новости и будь в курсе новинок
+                    <img src="./img/catalog/right.svg" alt=""
+                  /></a>
+                </div>
+                <div class="last__item">
+                  <img src="./img/news/01.png" alt="" />
+                  <div class="item__text">
+                    <div class="text__data">02.08.2023 18:50</div>
+                    <div class="text__subtitle">
+                      Мы приняли участие в международной выставке зимней моды
+                      Leshow
+                    </div>
+                  </div>
+                </div>
+                <div class="last__item">
+                  <img src="./img/news/02.png" alt="" />
+                  <div class="item__text">
+                    <div class="text__data">02.08.2023 18:50</div>
+                    <div class="text__subtitle">
+                      Благодарим Вас за любовь к нашим изделиям!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PRICE-RECOMMEND -->
+        <section class="recommend">
+          <div class="recommend__container">
+            <div class="recommend__content">
+              <div class="recommend__items">
+                <div class="recommend__item">
+                  <div class="item__text">
+                    <div class="item__title">
+                      Рекомендации <span>для Вас</span>
+                    </div>
+                    <a href="#" class="item__btn">37 вариантов</a>
+                  </div>
+                </div>
+                <div class="recommend__item">
+                  <img src="./img/recommend/01.png" alt="" />
+                  <div class="text__item">
+                    <div class="text__sale">
+                      <div class="sale__sale">sale</div>
+                      <div class="sale__num">500 ₽</div>
+                      <div class="sale__del">750 ₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recommend__item">
+                  <img src="./img/recommend/04.png" alt="" />
+                  <div class="text__item">
+                    <div class="text__sale">
+                      <div class="sale__sale">sale</div>
+                      <div class="sale__num">500 ₽</div>
+                      <div class="sale__del">750 ₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recommend__item">
+                  <img src="./img/recommend/02.png" alt="" />
+                  <div class="text__item">
+                    <div class="text__sale">
+                      <div class="sale__sale">sale</div>
+                      <div class="sale__num">500 ₽</div>
+                      <div class="sale__del">750 ₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recommend__item">
+                  <img src="./img/recommend/03.png" alt="" />
+                  <div class="text__item">
+                    <div class="text__sale">
+                      <div class="sale__sale">sale</div>
+                      <div class="sale__num">500 ₽</div>
+                      <div class="sale__del">750 ₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PRICE-ABOUT -->
+        <section class="about">
+          <div class="about__container">
+            <div class="about__content">
+              <div class="about__img">
+                <img src="./img/About/bg.png" class="bout__logo" alt="" />
+                <img src="./img/About/bgPhone.png" class="bout__phone" alt="" />
+                <img
+                  src="./img/About/bgVector.png"
+                  class="bout__vector"
+                  alt=""
+                />
+              </div>
+              <div class="about__text">
+                <div class="text__title">
+                  Крупнейшая торговая меховая площадка в Рунете
+                </div>
+                <div class="text__subtitle">
+                  С 2007 года продаем мех и фурнитуру крупным и мелким оптом.
+                </div>
+                <div class="text__muted">
+                  Наша главная задача — сделать покупки удобнее. Посоветуем
+                  модные принты, найдем те самые перламутровые пуговицы, будем
+                  на связи вечером и в выходные.
+                </div>
+                <div class="about__rows">
+                  <div class="rows__text">
+                    <img src="./img/About/01.svg" alt="" />
+                    <div class="rows__num">26 000</div>
+                    <div class="rows__subtitle">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                  </div>
+                  <div class="rows__text">
+                    <img src="./img/About/02.svg" alt="" />
+                    <div class="rows__num">720</div>
+                    <div class="rows__subtitle">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PRICE-COMFORT -->
+        <section class="comfort">
+          <div class="comfort__container">
+            <div class="comfort__content">
+              <div class="comfort__items">
+                <div class="comfort__item">
+                  <img src="./img/comfort/01.png" alt="" />
+                  <div class="comfort__title">
+                    Дисконтная программа, карты лояльности и бонусы
+                  </div>
+                  <div class="comfort__subtitle">
+                    Индивидуальный подход к каждому клиенту
+                  </div>
+                </div>
+                <div class="comfort__item">
+                  <img src="./img/comfort/03.png" alt="" />
+                  <div class="comfort__title">Удобная и быстрая доставка</div>
+                  <div class="comfort__subtitle">
+                    Поиск по характеристикам, цене и рейтингу
+                  </div>
+                </div>
+                <div class="comfort__item">
+                  <img src="./img/comfort/02.png" alt="" />
+                  <div class="comfort__title">Весь товар сертифицирован</div>
+                  <div class="comfort__subtitle">
+                    Документы соответствуют всем нормам и стандартам
+                  </div>
+                </div>
+                <div class="comfort__item">
+                  <img src="./img/comfort/04.png" alt="" />
+                  <div class="comfort__title">Обмен и возврат товара</div>
+                  <div class="comfort__subtitle">
+                    в течение 14 дней, не считая дня покупки
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PRICE-FORM -->
+        <section class="form">
+          <div class="form__contaienr">
+            <div class="form__content">
+              <div class="form__img">
+                <img src="./img/form/bg.png" alt="" />
+              </div>
+              <div class="form__wrapper">
+                <form action="" method="">
+                  <div class="form__title">Получите скидку 50%! *</div>
+                  <div class="form__subtitle">
+                    *Оставьте свои контактные данные и получите персональный
+                    промокод со скидкой 50% на первый заказ!
+                  </div>
+                  <div class="form__input">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Ваша почта"
+                      required
+                    />
+                    <button class="submit__button">Отправить</button>
+                  </div>
+                  <div class="form__verify">
+                    <input
+                      type="checkbox"
+                      class="verify__label"
+                      name="verify"
+                    />
+                    <div class="verify__check"></div>
+                    <label for="verify" class="verify__text"
+                      ><p class="text__verify">
+                        Я даю свое согласие на обработку персональных данных
+                      </p></label
+                    >
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__content">
+            <div class="footer__logo">
+              <img src="./img/footer/footerLogo.png" alt="" />
+              <div class="footer-logo__list">
+                <ul class="list__footer">
+                  <li class="list-footer__name">
+                    <a href="#" class="link-footer__name">Документы</a>
+                  </li>
+                  <li class="list-footer__name">
+                    <a href="#" class="link-footer__name"
+                      >Согласие на обработку данных</a
+                    >
+                  </li>
+                  <li class="list-footer__name">
+                    <a href="#" class="link-footer__name"
+                      >Политика конфиденциальности</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__list">
+              <div class="list__title">Каталог</div>
+              <ul class="list__footer">
+                <li class="footer-list__name">
+                  <a href="#" class="footer-link__name">Каталог</a>
+                </li>
+                <li class="footer-list__name">
+                  <a href="#" class="footer-link__name">Помпоны оптом</a>
+                </li>
+                <li class="footer-list__name">
+                  <a href="#" class="footer-link__name">Вязанные изделия</a>
+                </li>
+                <li class="footer-list__name">
+                  <a href="#" class="footer-link__name">Искусственный мех</a>
+                </li>
+                <li class="footer-list__name">
+                  <a href="#" class="footer-link__name">Меховые опушки</a>
+                </li>
+                <li class="footer-list__name">
+                  <a href="#" class="footer-link__name">Индивидуальный заказ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list">
+              <div class="list__title">О нас</div>
+              <ul class="list__footer">
+                <li class="footer-list__name">
+                  <a href="#" class="footer-link__name">О нас</a>
+                </li>
+                <li class="footer-list__name">
+                  <a href="#" class="footer-link__name">Статьи</a>
+                </li>
+                <li class="footer-list__name">
+                  <a href="#" class="footer-link__name">Напишите нам</a>
+                </li>
+                <li class="footer-list__name">
+                  <a href="#" class="footer-link__name">Отзывы</a>
+                </li>
+                <li class="footer-list__name">
+                  <a href="#" class="footer-link__name">Частые вопросы</a>
+                </li>
+                <li class="footer-list__name">
+                  <a href="#" class="footer-link__name">Таблица размеров</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-contact__list">
+              <div class="contact__title">Контакты</div>
+              <div class="contact__number">
+                <div class="number__num">8 (916) 745 52 98</div>
+                <div class="number__text">Ежедневно с 10:00 до 21:00</div>
+              </div>
+              <div class="contact__social">
+                <a href="#" class="social__link"
+                  ><img src="./img/footer/socials.png" alt="" /> </a
+                ><a href="#" class="social__link"
+                  ><img src="./img/footer/socials-1.png" alt="" /> </a
+                ><a href="#" class="social__link"
+                  ><img src="./img/footer/socials-2.png" alt="" /> </a
+                ><a href="#" class="social__link"
+                  ><img src="./img/footer/socials-3.png" alt=""
+                /></a>
+              </div>
+              <div class="contact__pay">
+                <img src="./img/footer/XMLID 2.png" alt="" />
+                <img src="./img/footer/visa.png" alt="" />
+                <img src="./img/footer/maestro.png" alt="" />
+              </div>
+            </div>
+            <div class="footer-list__download">
+              <div class="download__text">Скачай наше приложение</div>
+              <div class="download__code">
+                <a href="#" class="donwload__code"
+                  ><img src="./img/footer/image 1.png" alt=""
+                /></a>
+                <div class="download__app">
+                  <a href="#" class="donwload__app"
+                    ><img src="./img/footer/image 2.png" alt="" /> </a
+                  ><a href="#" class="donwload__app"
+                    ><img src="./img/footer/image 3.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-logo__list active__end">
+              <ul class="list__footer">
+                <li class="list-footer__name">
+                  <a href="#" class="link-footer__name">Документы</a>
+                </li>
+                <li class="list-footer__name">
+                  <a href="#" class="link-footer__name"
+                    >Согласие на обработку данных</a
+                  >
+                </li>
+                <li class="list-footer__name">
+                  <a href="#" class="link-footer__name"
+                    >Политика конфиденциальности</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
